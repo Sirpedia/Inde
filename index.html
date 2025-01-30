@@ -12,11 +12,10 @@
 const Meatball = document.getElementById("Meatball")
 meatpos = 0
 function Throw() {
-  meatpos = parseInt(meatpos) + 100
+  meatpos = parseInt(meatpos) + 10
   Meatball.style.left = meatpos
-  setTimeout(Throw,2000)
-   meatpos = parseInt(meatpos) + 100
-  Meatball.style.left = meatpos
+  setTimeout(Throw,200)
+
 }
 
 
