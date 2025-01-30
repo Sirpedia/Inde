@@ -15,10 +15,11 @@ Meatball.style.left = meatpos
 function Throw() {
 meatpos = parseInt(meatpos) + 5
   Meatball.style.left = meatpos
-  setTimeout(Throw,1)
-  if (meatpos == zombpos) {
+  MyTimeout = setTimeout(Throw,1)
+  if (meatpos > 2000) {
   meatpos = 0
   Meatball.style.left = meatpos
+    ClearTimeout(MyTimeout)
 }
 }
 
