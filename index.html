@@ -1,6 +1,27 @@
 <html>
 <body style="background-image: url('Bg.png');">
-<img src="Vyn.png">
-<img src="Meatball.png">
+
+  
+<img src="Vyn.png" id="Vyn">
+<img src="Meatball.png" id="Meatball" style="position: absolute;">
+
+<button onclick="Throw()"> Throw! </button>
+
+
+<script>
+Meatball = document.getElementById("Meatball")
+meatpos = 0
+function Throw() {
+for (let meatpos = 0; step < 1000; step++) {
+ meatpos = meatpos + 1
+  Meatball.style.left = meatpos
+}
+
+}
+
+
+
+  
+</script>
 </body>
 </html>
