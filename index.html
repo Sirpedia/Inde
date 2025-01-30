@@ -10,8 +10,9 @@
 
 <script>
 const Meatball = document.getElementById("Meatball")
-meatpos = 0
+meatpos = 100
 function Throw() {
+  
   meatpos = parseInt(meatpos) + 5
   Meatball.style.left = meatpos
   setTimeout(Throw,1)
