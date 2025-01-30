@@ -10,21 +10,18 @@
 
 <script>
 const Meatball = document.getElementById("Meatball")
-meatpos = 100
-function Throwcode() {
-    meatpos = parseInt(meatpos) + 5
-  Meatball.style.left = meatpos
-  }
-}
+
+
 function Throw() {
-  meatpos = 100
+meatpos = parseInt(meatpos) + 5
+  Meatball.style.left = meatpos
   Meatball.style.left = meatpos
   setTimeout(Throwcode,1)
   if (meatpos == zombpos) {
   meatpos = 0
   Meatball.style.left = meatpos
 }
-
+}
 
 
 
