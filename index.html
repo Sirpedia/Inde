@@ -5,12 +5,14 @@
 <img src="Vyn.png" id="Vyn">
 <img src="Meatball.png" id="Meatball" style="position: fixed; left: 0px ">
 
-<button onclick="Throw()"> Throw! </button>
+<button onclick="Attack()"> Throw! </button>
 
 
 <script>
+
+  
 const Meatball = document.getElementById("Meatball")
-  meatpos = 100
+  meatpos = 4000
   speed = 5
 Meatball.style.left = meatpos
 function Throw() {
@@ -18,14 +20,11 @@ function Throw() {
 meatpos = parseInt(meatpos) + parseInt(speed)
   Meatball.style.left = meatpos
   MyTimeout = setTimeout(Throw,1)
-  if (meatpos > 2000) {
-  meatpos = 0
-  Meatball.style.left = meatpos
-    speed = 0
+
     
 }
-}
 
+Throw()
 
 
   
