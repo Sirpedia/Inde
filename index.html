@@ -10,16 +10,19 @@
 
 <script>
 const Meatball = document.getElementById("Meatball")
-meatpos = 100
+  meatpos = 100
+  speed = 5
 Meatball.style.left = meatpos
 function Throw() {
-meatpos = parseInt(meatpos) + 5
+  speed = 5
+meatpos = parseInt(meatpos) + parseInt(speed)
   Meatball.style.left = meatpos
   MyTimeout = setTimeout(Throw,1)
   if (meatpos > 2000) {
   meatpos = 0
   Meatball.style.left = meatpos
-    return;
+    speed = 0
+    
 }
 }
 
