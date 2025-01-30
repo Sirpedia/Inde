@@ -15,7 +15,10 @@ function Throw() {
   meatpos = parseInt(meatpos) + 5
   Meatball.style.left = meatpos
   setTimeout(Throw,1)
-
+  if (meatpos == 100) {
+  meatpos = 0
+  Meatball.style.left = meatpos
+  }
 }
 
 
