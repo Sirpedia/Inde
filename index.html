@@ -18,6 +18,7 @@ const Monster = document.getElementById("Monster")
   meatheight = 500
   monsterpos = 1300
   monsterheight = 500
+  monsterhealth = 5
   speed = 5
 Meatball.style.left = meatpos
 Meatball.style.top = meatheight
@@ -30,7 +31,11 @@ meatpos = parseInt(meatpos) + parseInt(speed)
   if (Math.abs(monsterpos - meatpos) < 10) {
 meatpos = 4000
 Meatball.style.left = meatpos
-  document.getElementById("SplatSound").play();
+  monsterhealth = monsterhealth - 1
+  if (monsterhealth < 1) {
+    monsterpos = 1300
+Monster.style.left = monsterpos
+  }
 
 }
  
