@@ -2,9 +2,9 @@
 <body style="background-image: url('Bg.png');">
 
   
-<img src="Vyn.png" id="Vyn" style="position:absolute; top: 40%">
-<img src="Meatball.png" id="Meatball" style="position: fixed; left: 0px; top: 40% ">
-<img src="MeatMonster.png" id="Monster" style="position: fixed; left: 1300px; top: 50%">
+<img src="Vyn.png" id="Vyn" style="position:absolute; top: 500px">
+<img src="Meatball.png" id="Meatball" style="position: fixed; left: 0px; top: 500px ">
+<img src="MeatMonster.png" id="Monster" style="position: fixed; left: 1300px; top: 700px ">
 
 <button onclick="Attack()"> Throw! </button>
 
@@ -13,9 +13,12 @@
 
   
 const Meatball = document.getElementById("Meatball")
+const Monster = document.getElementById("Monster")
   meatpos = 4000
+  meatheight = 
   speed = 5
 Meatball.style.left = meatpos
+Meatball.style.top = meatheight
 function Throw() {
   
 meatpos = parseInt(meatpos) + parseInt(speed)
@@ -30,7 +33,12 @@ Meatball.style.left = meatpos
 
   
 }
+function Push() {
 
+
+
+
+}
   
 Throw()
 
