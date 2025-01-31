@@ -27,7 +27,7 @@ function Throw() {
 meatpos = parseInt(meatpos) + parseInt(speed)
   Meatball.style.left = meatpos
   MyTimeout = setTimeout(Throw,1)
-  if (Math.abs(monsterpos - meatpos) < 100) {
+  if (Math.abs(monsterpos - meatpos) < 10) {
 meatpos = 4000
 Meatball.style.left = meatpos
   
