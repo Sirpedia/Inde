@@ -30,7 +30,8 @@ meatpos = parseInt(meatpos) + parseInt(speed)
   if (Math.abs(monsterpos - meatpos) < 10) {
 meatpos = 4000
 Meatball.style.left = meatpos
-  
+  document.getElementById("SplatSound").play();
+
 }
  
 }
