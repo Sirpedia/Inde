@@ -44,10 +44,31 @@ Monster.style.left = monsterpos
 
 
 }
-  
-Throw()
-Push()
+function StrafeUp() {
+monsterheight = 450
+Monster.style.top = monsterheight
 
+
+  
+}
+
+  function StrafeDown() {
+monsterheight = 550
+Monster.style.top = monsterheight
+
+
+  
+}
+
+function Strafe() {
+  setTimeout(StrafeUp,1000)
+  setTimeout(StrafeDown,1000)
+  setTimeout(Strafe,1000)
+}
+
+  Throw()
+Push()
+Strafe()
   
 </script>
 </body>
