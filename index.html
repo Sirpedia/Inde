@@ -20,6 +20,7 @@ const Monster = document.getElementById("Monster")
   monsterheight = 500
   monsterhealth = 5
   speed = 5
+  monsterspeed = 0.5
 Meatball.style.left = meatpos
 Meatball.style.top = meatheight
 
@@ -36,6 +37,7 @@ Meatball.style.left = meatpos
     monsterpos = 1300
 Monster.style.left = monsterpos
     monsterhealth = 5
+    monsterspeed = parseInt(monsterspeed) + 0.5
   }
 
 }
@@ -48,7 +50,7 @@ Meatball.style.left = meatpos
   
 }
 function Push() {
-monsterpos = parseInt(monsterpos) - 0.5
+monsterpos = parseInt(monsterpos) - parseInt(monsterspeed)
 Monster.style.left = monsterpos
   setTimeout(Push,1)
 
