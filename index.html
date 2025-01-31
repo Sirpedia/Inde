@@ -50,7 +50,7 @@ Meatball.style.left = meatpos
   
 }
 function Push() {
-monsterpos = parseInt(monsterpos) - parseFloat(monsterspeed)
+monsterpos = parseFloat(monsterpos) - parseFloat(monsterspeed)
 Monster.style.left = monsterpos
   setTimeout(Push,1)
 
