@@ -27,16 +27,12 @@ function Throw() {
 meatpos = parseInt(meatpos) + parseInt(speed)
   Meatball.style.left = meatpos
   MyTimeout = setTimeout(Throw,1)
-  if (meatpos - monsterpos < 200) {
+  if (Math.abs(monsterpos - meatpos) < 200) {
 meatpos = 4000
 Meatball.style.left = meatpos
   
 }
-   if (monsterpos - meatpos < 200) {
-meatpos = 4000
-Meatball.style.left = meatpos
-  
-}   
+ 
 }
 function Attack() {
 meatpos = 100
